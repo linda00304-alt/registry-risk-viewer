@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Registry Risk Viewer security rules
+.streamlit/secrets.toml
+.env
+*.pdf
+data/samples/real/
