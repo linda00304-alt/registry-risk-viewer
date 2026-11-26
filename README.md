@@ -318,3 +318,11 @@ A small Streamlit prototype is used only to test the idea and to capture screens
 | v0.3        | 2026-11-09 | A2 trigger fixed (R ≥ 0.70). Model name moved to configuration. A11 lookup now selected by Date_Pivot with current and previous tables. Two court-case citations marked \[Unverified\].                                                                                                                                        |
 | v1.0        | 2026-11-09 | Restructured into the nine required items. Added a concrete example, three wireframes, a user flow with error and edge cases, a data and license table, prompts, a cost plan and a risk table. "Deposit Safety Bar" renamed "Deposit Ratio Bar" to match the no-safety-claims rule. Roadmap and test plan moved to Appendix D. |
 
+## Implementation Status (Current)
+
+- **Implemented / Checked:** Minimal Streamlit scaffold in `app.py`; synthetic-sample PDF text, bounding-box, and strike-through inspection with PyMuPDF.
+- **Not Yet Implemented / Unverified in Repo:**
+  - Session cap of 5 Claude API calls (`st.session_state` counter)
+  - Name masking (`[MASKED]`) before Prompt 1 API calls
+  - Demo-mode fallback logic/saved answers wired in code
+  - Automated test suite (`pytest`)
